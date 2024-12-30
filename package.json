@@ -1,7 +1,7 @@
 {
-	"name": "ChiloV3",
-	"version": "3.0.0",
-	"description": "SCRIPT SIMPLE",
+	"name": "ReszV1",
+	"version": "1.0.0",
+	"description": "SCRIPT PRIBADI",
 	"main": "index.js",
 	"type": "commonjs",
 	"scripts": {

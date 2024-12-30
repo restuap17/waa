@@ -1,5 +1,5 @@
 require('./config')
-const { default: makeWAreszet, DisconnectReason, useSingleFileAuthState } = require('@adiwajshing/baileys');
+const { default: makeWASocket, DisconnectReason, useSingleFileAuthState } = require('@adiwajshing/baileys');
 const { Boom } = require('@hapi/boom');
 const fs = require('fs');
 const readline = require('readline');
@@ -19,7 +19,7 @@ const usePairingCode = true
 async function startResz() {
 const { state, saveState } = useSingleFileAuthState('./auth_info.json');
 
-    const resz = makeWAreszet({
+    const resz = makeWASocket({
         logger: pino({ level: "silent" }),
 printQRInTerminal: !usePairingCode,
 auth: state,
